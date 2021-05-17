@@ -1,16 +1,61 @@
-<div></div>
+<div class="container">
+  <div class="background_container">
+    <div class="aqua circle"></div>
+ 	<div class="blue circle"></div>
+ 	<div class="yellow circle"></div>
+  </div>
+
+</div>
+
 <style>
-  div {
-    width: 100px;
-    height: 100px;
-    background: #dd6b4d;
+  
+  body{
+    margin:0;
+    background: #6592CF;
+  }
+  
+  .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+    
+
+  .background_container{
+    background:#243D83;
+    width: 75%;
+    height: 50%;
+    position:relative;
+  }
+  
+  div.aqua{
+    background:#6592CF;
+    bottom:-50;
+    left:25;
+    width: 250;
+    height: 250;
+    position: absolute;
+  }
+  
+  div.blue{
+    background:#243D83;
+    width: 50%;
+    height: 100%;
+    left:25%;
+    position:absolute;
+  }
+    
+  div.yellow{
+    background:#EEB850;
+    width: 50;
+    height: 50;
+    top:50;
+    left:125;
+    position:absolute;
+  }
+  
+  div.circle {
+    border-radius: 50%
   }
 </style>
-
-<!-- OBJECTIVE -->
-<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
-
-<!-- SCORING -->
-<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
-
-<!-- IMPORTANT: remove the comments before submitting -->
