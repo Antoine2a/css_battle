@@ -1,16 +1,70 @@
-<div></div>
+<div container>
+  <div yellowline></div>
+  <div yellowline></div>
+  <div yellowline></div>
+</div>
+<div left circle></div>
+<div middle circle></div>
+<div right circle></div>
+
+
 <style>
-  div {
-    width: 100px;
-    height: 100px;
-    background: #dd6b4d;
+  
+  body{
+    margin:0;
+    background: #62306D;
+    position: relative;
   }
+  
+  div[container]{
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items : end;
+  }
+  div[yellowline]{
+    width:100;
+    background: #F7EC7D;
+  }
+  div[yellowline]:first-of-type, div[yellowline]:last-of-type{
+    height:100;
+  }
+  div[yellowline]:nth-child(2){
+    height:200;
+  }  
+  
+  div[left]{
+    background : #E38F66;
+    top:170;
+    left: 0;
+    right: 50%;
+    box-shadow: 0 0 0 20px #AA445F;
+  }
+  
+  div[middle]{
+    background : #AA445F;
+    top:70;
+    left: 0;	
+    right: 0;
+    box-shadow: 0 0 0 20px #E38F66;
+  }
+  
+  div[right]{
+    background : #E38F66;
+    top:170;
+    left: 50%;
+    right: 0;
+    box-shadow: 0 0 0 20px #AA445F;
+  }
+  
+  div[circle] {
+    border-radius: 50%;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    width:61;
+    height:61;
+  }
+  
+  
 </style>
-
-<!-- OBJECTIVE -->
-<!-- Write HTML/CSS in this editor and replicate the given target image in the least code possible. What you write here, renders as it is -->
-
-<!-- SCORING -->
-<!-- The score is calculated based on the number of characters you use (this comment included :P) and how close you replicate the image. Read the FAQS (https://cssbattle.dev/faqs) for more info. -->
-
-<!-- IMPORTANT: remove the comments before submitting -->
