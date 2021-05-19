@@ -1,15 +1,41 @@
-<div></div>
 
+<div class="left triangle"></div>
+<div class="right triangle"></div>
 <style>
   
-  body {
-    background: #5d3a3a;
-    margin: 0
+  body{
+    background:#F2F2B6;
+    margin:0;
+    position:relative;
+    width: 100%;
+    height:100%;
   }
   
-  div {
-    width: 200px;
-    height: 200px;
-    background: #b5e0ba;
+    div.triangle {
+    width: 0;
+    height: 0;
+    background:transparent;
+    border-style: solid;
+    
+    border-width: 130 75 0 75;
   }
+  
+  div.left{
+    border-color: #FF6D00 transparent transparent;
+    position:absolute;
+    left:34%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(20px 0px 0px #FD4602);
+  }
+  
+    div.right{
+    border-color: #FD4602 transparent transparent;	
+    position:absolute;
+    left:61%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(180deg);
+    filter: drop-shadow(-20px 0px 0px #FF6D00);
+  }
+  
 </style>
