@@ -1,15 +1,48 @@
-<div></div>
-
+<div class="left"></div>
+<div class="right"></div>
+<div class="middle"></div>
 <style>
   
-  body {
-    background: #5d3a3a;
-    margin: 0
+  body{
+    background:#09042A;
+    margin:0;
+    position:relative;
+    width: 100%;
+    height:100%;
+  }
+  div {
+    width: 150;
+    height: 150;
+    border-radius:50%;
   }
   
-  div {
-    width: 200px;
-    height: 200px;
-    background: #b5e0ba;
+  div.left{
+    background:#7B3F61;
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-125px, -50%);
   }
+  
+    div.right{
+      background:#E78481;
+      position:absolute;
+      right:50%;
+      top: 50%;
+      transform: translate(125px, -50%);
+  }
+  
+  div.middle{
+    width: 80;
+    height: 80;
+    background: #09042A;
+    border-radius:100% 5% 100% 5%;
+    
+    position:absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  
+  
 </style>
