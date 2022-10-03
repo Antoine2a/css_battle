@@ -1,0 +1,101 @@
+<div id="container">
+  <div class="dot" id="bottom-dot">
+  </div>
+  <div id="i"> </div>
+  <div id="vertical-bar"> </div>
+  <div class="horizontal-bar" id="top-horizontal-bar"> </div>
+  <div class="horizontal-bar" id="bottom-horizontal-bar"> </div>
+    <div class="vertical-side-bar" id="left-vertical-side-bar"> </div>
+ <div class="vertical-side-bar" id="right-vertical-side-bar"> </div>
+  <div class="dot" id="top-dot">
+  </div>
+</div>
+<style>
+  body {
+  	background: #E3516E;
+  	margin: 0;
+  }
+  
+  #container {
+  	position: absolute;
+  
+  	width: 180px;
+  	height: 160px;
+  	background: #E3516E;
+  	transform: translate(-50%, -50%);
+  
+  	top: 50%;
+  	left: 50%;
+  }
+  
+  
+  #vertical-bar {
+  	width: 50px;
+  	height: 160px;
+    background: #FADE8B;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  
+  }
+  
+  .horizontal-bar {
+    width: 55%;
+  	height: 30.5px;
+  	border-radius: 25px;
+    background: #FADE8B;
+  }
+
+  #top-horizontal-bar{
+  	position: absolute;
+    left: 50%;
+  	top: 0px;
+  	transform: translate(-50%);    
+  }
+
+  #bottom-horizontal-bar{
+  	position: absolute;
+    left: 50%;
+  	transform: translate(-50%);
+  	bottom: 0px;
+  }
+
+  .vertical-side-bar {
+    width: 30px;
+  	height: 100px;
+  	border-radius: 10px;
+    background: #E3516E;
+    position: absolute;
+    transform: translate(0,-50%);
+  	top: 50%;
+  }
+
+  #left-vertical-side-bar {
+    left: 45px;
+  }
+
+  #right-vertical-side-bar {
+    position: absolute;
+    right: 45px;
+  }
+  
+  .dot {
+  	width: 30px;
+  	height: 30px;
+  	border-radius: 50%;
+    background: #FADE8B;
+  }
+  
+  #top-dot {
+  	position: absolute;
+  	right: 0px;
+  	top: 0px;
+  }
+  
+  #bottom-dot {
+  	position: absolute;
+  	left: 0px;
+  	bottom: 0.5px;
+  }
+</style>
